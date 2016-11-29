@@ -80,6 +80,17 @@ document.querySelector("#reverse-squares button").addEventListener('click', func
 
 // TASK #7
 document.querySelector("#pig-latin button").addEventListener('click',function(){
+   let problemToSolve = document.querySelectorAll('#tasks li')
+   for (var i = 0; i < problemToSolve.length; i++){
+      let disArrCrnt = problemToSolve[i].innerHTML
+      let newString = ''
+      for (var a = disArrCrnt.length -1; a >= 0; a = a -1){
+         newString = newString + disArrCrnt[a]
+      }
+      problemToSolve[i].innerHTML = newString
+   }
+
+
 
 })
 
